@@ -4,14 +4,14 @@ import math
 import random
 import re
 
-sep = [char for char in "~!@#$%^&*(){}"]
-trans = [char for char in "`1234567890[]',.pyfgcrl/=\\aoeuidthns-;qjkxbmwvz\"<>PYFGCRL?+|AOEUIDHTNS_:QJKXBMWVZ"]
+#sep = [char for char in "~!@#$%^&*(){}"]
+#trans = [char for char in "`1234567890[]',.pyfgcrl/=\\aoeuidthns-;qjkxbmwvz\"<>PYFGCRL?+|AOEUIDHTNS_:QJKXBMWVZ"]
 import sys
 
 #分隔符 单字
-#sep = [' ']
+sep = [' ']
 #字体 单字
-#trans = ['咕','呱']
+trans = ['咕','呱']
 trans_m = {trans[a]:a for a in range(0,len(trans))}
 
 def encrypt_string(message):
